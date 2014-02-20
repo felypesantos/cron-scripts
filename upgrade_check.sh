@@ -1,5 +1,4 @@
 #!/bin/bash
-
 #v0.5
 # Script que verifica se ha atualizoes disponiveis para Ubuntu.
 # Manda e-mail se houver.
