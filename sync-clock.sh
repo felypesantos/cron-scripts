@@ -1,7 +1,7 @@
 #!/bin/sh
 
 NTPDATE=/usr/sbin/ntpdate
-SERVER="10.160.0.60"
+SERVER="IP ADDRESS"
 
 # if running from cron (no tty available), sleep a bit to space
 # out update requests to avoid slamming a server at a particular time
