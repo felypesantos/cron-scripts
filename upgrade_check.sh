@@ -33,8 +33,8 @@ if [[ `/usr/bin/apt-get update 2>&1 | grep Get` ]]; then
 		echo "Subject: $SUBJECT" >> /tmp/upgrade_check.tmp.$$
 		/usr/bin/apt-get --simulate upgrade >> /tmp/upgrade_check.tmp.$$
 		if [ -e /usr/sbin/sendmail ]; then
-			/usr/sbin/sendmail -t felipe.camara@uninove.br < /tmp/upgrade_check.tmp.$$
-			/usr/sbin/sendmail -t wmgimenes@uninove.br < /tmp/upgrade_check.tmp.$$
+			/usr/sbin/sendmail -t felypesantos@gmail.com < /tmp/upgrade_check.tmp.$$
+			/usr/sbin/sendmail -t email02@gmail.com < /tmp/upgrade_check.tmp.$$
 		else
 			MSG=$(cat /tmp/upgrade_check.tmp.$$)
 			manda_email "${MSG}" "felypesantos@gmail.com"
